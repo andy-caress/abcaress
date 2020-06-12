@@ -5,12 +5,21 @@
 body {
   margin: 0;
   padding: 0px;
-  background: yellow;
+  overflow:hidden;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: repeat;
+  background-image: url('assets/childhood.jpg');
+  background-size: 25%;
+  filter: blur(1.5px);
 }
 
 .main-wrap {
-  /* display: flex; */
-  flex-flow: row wrap;
+  display: flex;
+  flex-flow: column;
 
   border: 5px solid red;
   height: 98%;
@@ -19,10 +28,11 @@ body {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  max-height: 98%;
 }
 
 .main-wrap > * {
-  flex: 1 100%;
+  /* flex: 1 100%; */
 }
 
 /* NAVIGATION
@@ -30,6 +40,8 @@ body {
 .nav-wrap {
   display: block;
   flex-direction:row;
+  /* flex-grow: 1; */
+
 }
 
 .nav {
@@ -85,10 +97,6 @@ div#btn:hover span#d {
   display: inline;
 }
 
-.statement-wrap {
-
-}
-
 /* STATEMENT
 --------------------------------------- */
 .statement-wrap {
@@ -99,41 +107,23 @@ div#btn:hover span#d {
   padding-bottom: 3px;
   /* position: absolute; */
   border-bottom: 5px solid red;
+  /* flex-grow: 1; */
 }
 
 /* NAME
 --------------------------------------- */
 .name-wrap {
   width:100%;
-  height:100%;
   display: flex;
-  top: 50%;
+  /* top: 50%; */
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 #name {
   width:100%;
   max-width:70%;
-  transform: translate(-50%, -50%)
-  top: 50%;
-  left: 50%;
-  margin:auto;
-
-  /* display:flex;
-  justify-content: center;
-  align-items:center;
-  transform: translate(-50%, -50%)
-  top: 50%;
-  left: 50%; */
-}
-
-  /* position: relative;
-  transform: translateX(-50%);
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  max-width: 70%;
-  margin-top: 2.25%;
-  margin-bottom: 2.25%; */
 }
 
 div#name span#e {
