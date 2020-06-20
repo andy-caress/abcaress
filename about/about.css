@@ -5,54 +5,57 @@
 body {
   margin: 0;
   padding: 0px;
+  overflow:hidden;
+  font-style: normal;
+  font-family: halyard-display, sans-serif;
 }
 
-/* .container-wrap {
+.background {
   height: 100vh;
   width: 100vw;
-  padding: 12px;
-} */
+  background-repeat: repeat;
+  background-image: url('../assets/childhood.jpg');
+  background-size: 25%;
+  filter: blur(1.5px);
+}
+
 .main-wrap {
+  display: flex;
+  flex-flow: column;
+
   border: 5px solid red;
   height: 98%;
-  width: 98%;
+  width: 70%;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  /* padding: 15px;
-  padding-right: 100px; */
+  max-height: 98%;
 }
 
-.wrap {
-
+.main-wrap > * {
+  /* flex: 1 100%; */
 }
 
 /* NAVIGATION
 --------------------------------------- */
 .nav-wrap {
   display: block;
-  /* padding: 24px; */
+  flex-direction:row;
 }
 
-.header {
-  list-style-type: none;
+.nav {
   display: flex;
   justify-content: space-between;
-  text-transform: uppercase;
-  /* padding-left:12px; */
   padding-top: 24px;
   padding-left: 12px;
   padding-right: 24px;
   padding-bottom: 24px;
-  /* border: 5px solid red; */
   border-bottom: 5px solid red;
 }
 
 #btn {
-  /* padding-left:10%;
-  padding-right:10%; */
-  width: 240px;
+  width: 20%;
   cursor: pointer;
 }
 
@@ -92,36 +95,43 @@ div#btn:hover span#d {
 
 /* STATEMENT
 --------------------------------------- */
+
 .statement-wrap {
-  width: 100%;
-  padding-top: 8px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-bottom: 3px;
-  position: absolute;
-  border-bottom: 5px solid red;
+  width: 70%;
+  margin: auto;
+  /* top: 50%; */
+  /* transform: translate(-50%, 50%); */
+  position: relative;
+}
+
+.statement {
+  /* margin: 0px; */
+  z-index: -1;
+}
+
+.statement p {
+  background-color: red;
+  color: blue;
+  font-weight: 300;
+  font-size: 2em;
+  letter-spacing: -.01em;
+  line-height: 1.1em;
 }
 
 /* NAME
 --------------------------------------- */
 .name-wrap {
-  display:flex;
+  width:100%;
+  display: flex;
+  /* top: 50%; */
   justify-content: center;
-  align-items:center;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 2.25%;
-  padding-left: 2.25%;
+  align-items: center;
+  flex-grow: 1;
 }
 
 #name {
-  display:flex;
-  margin-top: 2.25%;
-  margin-bottom: 2.25%;
-  position: relative;
-  width: 100%;
-  max-width: 70%;
-  max-height: 50%;
+  width:100%;
+  max-width:65%;
 }
 
 div#name span#e {

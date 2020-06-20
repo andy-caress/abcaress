@@ -1,69 +1,126 @@
+<!doctype html>
+<html>
+
 <!--
 cảm ơn to everyone who's helped me throughout the years.
 -->
-
-<!doctype html>
-<html>
 
 <head>
   <link rel="stylesheet" href="test.css">
   <title>
     Andrew Caress
   </title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="https://use.typekit.net/ohg1maz.css">
+
+  <!-- <script src="jquery.min.js"></script>
+  <script src="index.js"></script> -->
 </head>
 
 <body>
 
-  <!-- <div class="container-wrap"> -->
+  <div class="background"></div>
+  <!-- <img src="childhood.jpg"> -->
+
   <div class="main-wrap">
+
+    <div class="statement-wrap">
+      <div id="statement">
+        <div id="marquee1">
+          &nbsp;Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;
+        </div>
+        <div id="marquee2">
+          &nbsp;Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;
+        </div>
+      </div>
+    </div>
+
+    <div class="statement-wrap">
+      <div id="statement">
+        <div id="marquee3">
+          &nbsp;Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;
+        </div>
+        <div id="marquee4">
+          &nbsp;Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;
+        </div>
+      </div>
+
+      <div class="statement-wrap">
+        <div id="statement">
+          <div id="marquee5">
+            &nbsp;Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;
+          </div>
+          <div id="marquee6">
+            &nbsp;Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;
+          </div>
+        </div>
 
     <div class="nav-wrap">
 
-      <div class="header">
+      <div class="nav">
         <div id="btn">
-          <a href="#">
-            <span id="a"><img src="resources/about-01.svg"></span>
-            <span id="b"><img src="resources/about2-01.svg"></span>
+          <a href="about/about.html">
+            <span id="a"><img src="assets/about.svg"></span>
+            <span id="b"><img src="assets/about2.svg"></span>
           </a>
         </div>
 
         <div id="btn">
-          <a href="#">
-            <span id="c"><img src="resources/work-01.svg"></span>
-            <span id="d"><img src="resources/work2-01.svg"></span>
+          <a href="work/work.html">
+            <span id="c"><img src="assets/work.svg"></span>
+            <span id="d"><img src="assets/work2.svg"></span>
           </a>
         </div>
 
         <div id="btn">
-          <a href="#">
-            <span id="a"><img src="resources/resume.svg"></span>
-            <span id="b"><img src="resources/resume2.svg"></span>
+          <a href="resume/resume-online.pdf" target="_blank">
+            <span id="a"><img src="assets/resume.svg"></span>
+            <span id="b"><img src="assets/resume2.svg"></span>
           </a>
         </div>
       </div>
 
     </div>
 
-    <div class="wrap statement-wrap">
-      <img src="resources/statement.svg">
+    <!-- <div class="statement-wrap">
+      <img src="assets/statement.svg">
+    </div> -->
+
+    <div class="statement-wrap">
+      <div id="statement">
+        <div id="marquee1">
+          &nbsp;Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;
+        </div>
+        <div id="marquee2">
+          &nbsp;Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;
+        </div>
+      </div>
+
+      <!-- <div class="marquee">
+      <span class="statement">
+        <marquee scrolldelay="-1000" loop="infinite" scrollamount="20"> Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;</marquee>
+      </span>
+    </div> -->
     </div>
 
     <div class="name-wrap">
       <div id="name">
         <a href="#">
-          <span id="e"><img src="resources/name-english.svg"></span>
-          <span id="f"><img src="resources/name-viet2.svg"></span>
+          <span id="e"><img src="assets/name-english.svg"></span>
+          <span id="f"><img src="assets/name-viet2.svg"></span>
         </a>
       </div>
     </div>
 
-
-
   </div>
-  <!-- </div> -->
 
+  <script src="jquery.min.js"></script>
+  <script src="index.js"></script>
+  <script>
+    // It is absolute necessity that div should be smaller than individual text content.
+    $('#maindiv').width($('#div1').width());
+  </script>
 
 </body>
 

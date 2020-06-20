@@ -6,6 +6,8 @@ body {
   margin: 0;
   padding: 0px;
   overflow:hidden;
+  font-style: normal;
+  font-family: halyard-display, sans-serif;
 }
 
 .background {
@@ -99,16 +101,78 @@ div#btn:hover span#d {
 
 /* STATEMENT
 --------------------------------------- */
+
 .statement-wrap {
-  width: 100%;
-  padding-top: 8px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-bottom: 3px;
-  /* position: absolute; */
+  /* border-top: 5px solid red; */
   border-bottom: 5px solid red;
-  /* flex-grow: 1; */
+  padding-top: 8px;
+  padding-bottom: 5px;
 }
+
+.statement {
+  margin: 0px;
+}
+
+/* .statement marquee {
+  background-color: red;
+  left: 50%;
+  margin: auto;
+  z-index: -1;
+  display: inline-block;
+  font-size: 32px;
+}
+
+.marquee {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: blue;
+} */
+
+#statement {
+  /* These are absolutely necessary */
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+
+  background-color: red;
+  color: blue;
+  font-weight: 300;
+  font-size: 2em;
+  text-transform: uppercase;
+  z-index: -1;
+  letter-spacing: .04em;
+}
+
+#marquee1 {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+#marquee2 {
+  display: inline-block;
+  animation: marquee2 20s linear infinite;
+  /* Must be half the animation duration of both divs so it stats in sync to fill void left by completed transtition of first div */
+  animation-delay: 10s;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
 
 /* NAME
 --------------------------------------- */
@@ -123,7 +187,7 @@ div#btn:hover span#d {
 
 #name {
   width:100%;
-  max-width:70%;
+  max-width:65%;
 }
 
 div#name span#e {

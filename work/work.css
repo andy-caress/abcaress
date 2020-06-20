@@ -40,6 +40,7 @@ body {
   padding-top: 3%;
   padding-right: 2.25%;
   padding-left: 2.25%;
+  padding-bottom: 2%;
 }
 
 /* NAVIGATION
@@ -69,7 +70,7 @@ body {
 #btn {
   /* padding-left:10%;
   padding-right:10%; */
-  width: 240px;
+  width: 150px;
   cursor: pointer;
 }
 
@@ -165,24 +166,54 @@ div#btn:hover span#d {
 }
 
 p1 {
-  color:red;
+  color: red;
 }
 
 p1:hover {
-  color:blue;
+  color: blue;
 }
 
 p2 {
-  color:blue;
+  color: blue;
 }
 
 p2:hover {
-  color:red;
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+.color a {
+  position: relative;
+  background-color: blue;
+}
+
+.color2 a {
+  position: relative;
+  background-color: red;
+}
+
+.color .title-color {
+  background-color: blue;
+  left: 50%;
+  margin: auto;
+  z-index: -1;
+  display: inline-block
+}
+
+.color2 .title-color {
+  background-color: red;
+  left: 50%;
+  margin: auto;
+  z-index: -1;
+  display: inline-block
 }
 
 #gif img {
-  width:350px;
-  position:absolute;
+  width: 350px;
+  position: absolute;
 }
 
 div.text span#gif {

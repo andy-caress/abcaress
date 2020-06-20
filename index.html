@@ -13,12 +13,15 @@ cảm ơn to everyone who's helped me throughout the years.
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="https://use.typekit.net/ohg1maz.css">
+
+  <!-- <script src="jquery.min.js"></script>
+  <script src="index.js"></script> -->
 </head>
 
 <body>
 
-  <div class= "background"></div>
-    <!-- <img src="childhood.jpg"> -->
+  <div class="background"></div>
+  <!-- <img src="childhood.jpg"> -->
 
   <div class="main-wrap">
     <div class="nav-wrap">
@@ -26,15 +29,15 @@ cảm ơn to everyone who's helped me throughout the years.
       <div class="nav">
         <div id="btn">
           <a href="about/about.html">
-            <span id="a"><img src="assets/about-01.svg"></span>
-            <span id="b"><img src="assets/about2-01.svg"></span>
+            <span id="a"><img src="assets/about.svg"></span>
+            <span id="b"><img src="assets/about2.svg"></span>
           </a>
         </div>
 
         <div id="btn">
           <a href="work/work.html">
-            <span id="c"><img src="assets/work-01.svg"></span>
-            <span id="d"><img src="assets/work2-01.svg"></span>
+            <span id="c"><img src="assets/work.svg"></span>
+            <span id="d"><img src="assets/work2.svg"></span>
           </a>
         </div>
 
@@ -48,8 +51,28 @@ cảm ơn to everyone who's helped me throughout the years.
 
     </div>
 
-    <div class="statement-wrap">
+    <!-- <div class="statement-wrap">
       <img src="assets/statement.svg">
+    </div> -->
+
+    <div class="statement-wrap">
+
+      <div id="statement">
+        <!-- Need to have two divs with same content.
+      One div will translate completely out of parent and other div will fill the void till the transition for first div starts again. -->
+        <div id="marquee1">
+          &nbsp;Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;
+        </div>
+        <div id="marquee2">
+          &nbsp;Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;
+        </div>
+      </div>
+
+      <!-- <div class="marquee">
+      <span class="statement">
+        <marquee scrolldelay="-1000" loop="infinite" scrollamount="20"> Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;</marquee>
+      </span>
+    </div> -->
     </div>
 
     <div class="name-wrap">
@@ -60,7 +83,15 @@ cảm ơn to everyone who's helped me throughout the years.
         </a>
       </div>
     </div>
+
   </div>
+
+  <script src="jquery.min.js"></script>
+  <script src="index.js"></script>
+  <script>
+    // It is absolute necessity that div should be smaller than individual text content.
+    $('#maindiv').width($('#div1').width());
+  </script>
 
 </body>
 
