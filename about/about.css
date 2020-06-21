@@ -118,6 +118,10 @@ div#btn:hover span#d {
   line-height: 1.1em;
 }
 
+::selection {
+  background: blue;
+}
+
 /* NAME
 --------------------------------------- */
 .name-wrap {

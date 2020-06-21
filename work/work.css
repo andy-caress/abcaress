@@ -25,7 +25,7 @@ body {
 .main-wrap {
   border: 5px solid red;
   height: 98%;
-  width: 98%;
+  width: 70%;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;

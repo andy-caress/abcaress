@@ -37,6 +37,10 @@ body {
   /* flex: 1 100%; */
 }
 
+::selection {
+  background: blue;
+}
+
 /* NAVIGATION
 --------------------------------------- */
 .nav-wrap {

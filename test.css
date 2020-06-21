@@ -25,7 +25,7 @@ body {
 
   border: 5px solid red;
   height: 98%;
-  width: 98%;
+  width: 70%;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -42,15 +42,11 @@ body {
 .nav-wrap {
   display: block;
   flex-direction:row;
-  /* flex-grow: 1; */
-
 }
 
 .nav {
-  /* list-style-type: none; */
   display: flex;
   justify-content: space-between;
-  /* padding-left:12px; */
   padding-top: 24px;
   padding-left: 12px;
   padding-right: 24px;
@@ -59,9 +55,7 @@ body {
 }
 
 #btn {
-  /* padding-left:10%;
-  padding-right:10%; */
-  width: 240px;
+  width: 20%;
   cursor: pointer;
 }
 
@@ -103,76 +97,28 @@ div#btn:hover span#d {
 --------------------------------------- */
 
 .statement-wrap {
-  /* border-top: 5px solid red; */
-  border-bottom: 5px solid red;
-  padding-top: 8px;
-  padding-bottom: 5px;
+  width: 70%;
+  margin: auto;
+  /* top: 50%; */
+  /* transform: translate(-50%, 50%); */
+  position: relative;
+  display:inline-block;
+  -webkit-transform:scale(2,1);
 }
 
 .statement {
-  margin: 0px;
-  border-bottom: 5px solid red;
-  padding-top: 8px;
-  padding-bottom: 5px;
+  /* margin: 0px; */
+  z-index: -1;
 }
 
-#statement {
-  /* These are absolutely necessary */
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-
+.statement p {
   background-color: red;
   color: blue;
   font-weight: 300;
   font-size: 2em;
-  text-transform: uppercase;
-  z-index: -1;
-  letter-spacing: .04em;
+  letter-spacing: -.01em;
+  line-height: 1.1em;
 }
-
-#marquee1 {
-  display: inline-block;
-  animation: marquee 20s linear infinite;
-}
-
-#marquee2 {
-  display: inline-block;
-  animation: marquee2 20s linear infinite;
-  /* Must be half the animation duration of both divs so it stats in sync to fill void left by completed transtition of first div */
-  animation-delay: 10s;
-}
-
-#marquee1 {
-  display: inline-block;
-  animation: marquee 20s linear infinite;
-}
-
-#marquee2 {
-  display: inline-block;
-  animation: marquee2 20s linear infinite;
-  /* Must be half the animation duration of both divs so it stats in sync to fill void left by completed transtition of first div */
-  animation-delay: 10s;
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes marquee2 {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-200%);
-  }
-}
-
 
 /* NAME
 --------------------------------------- */
