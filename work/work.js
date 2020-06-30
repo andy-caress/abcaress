@@ -12,7 +12,7 @@ $('.marquee').marquee({
 	//duration in milliseconds of the marquee
 	duration: 7000,
 	//gap in pixels between the tickers
-	gap: 10,
+	gap: 5,
 	//time in milliseconds before the marquee will start animating
 	delayBeforeStart: 0,
 	//'left' or 'right'
@@ -24,7 +24,7 @@ $('.marquee').marquee({
 
 $('.marquee-btn').marquee({
 	duration: 2500,
-	gap: 30,
+	gap: 10,
 	delayBeforeStart: 0,
 	direction: 'left',
 	duplicated: true,
@@ -33,7 +33,7 @@ $('.marquee-btn').marquee({
 
 $('.marquee-btn2').marquee({
 	duration: 2500,
-	gap: 30,
+	gap: 10,
 	delayBeforeStart: 0,
 	direction: 'left',
 	duplicated: true,

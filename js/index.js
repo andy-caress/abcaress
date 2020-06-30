@@ -24,7 +24,7 @@ $('.marquee').marquee({
 
 $('.marquee-btn').marquee({
 	duration: 2500,
-	gap: 30,
+	gap: 10,
 	delayBeforeStart: 0,
 	direction: 'left',
 	duplicated: true,
@@ -33,7 +33,7 @@ $('.marquee-btn').marquee({
 
 $('.marquee-btn2').marquee({
 	duration: 2500,
-	gap: 30,
+	gap: 10,
 	delayBeforeStart: 0,
 	direction: 'left',
 	duplicated: true,

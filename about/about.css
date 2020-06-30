@@ -41,24 +41,16 @@ body {
 --------------------------------------- */
 a {
  color: inherit;
+ text-decoration: none;
 }
 
 .nav-wrap {
   display: block;
-  /* padding: 15px; */
-  /* padding-left: 50px; */
-  /* padding-right: 50px; */
-  /* display: flex; */
-  /* flex-direction:row; */
-  /* justify-content: space-between; */
-  /* flex-grow: 1; */
 }
 
 .nav {
-  /* list-style-type: none; */
   display: flex;
   justify-content: space-between;
-  /* padding-left:12px; */
   padding-top: 24px;
   padding-left: 12px;
   padding-right: 24px;
@@ -67,8 +59,6 @@ a {
 }
 
 [class*="col-"] {
-  /* float: left; */
-  /* padding: 15px; */
   overflow: hidden;
 }
 
@@ -120,58 +110,16 @@ a {
   background: red;
 }
 
-#btn {
-  width: 20%;
-  cursor: pointer;
-}
-
-#b:hover {}
-
-div#btn span#a {
-  display: inline;
-}
-
-div#btn:hover span#a {
-  display: none;
-}
-
-div#btn span#b {
-  display: none;
-}
-
-div#btn:hover span#b {
-  display: inline;
-}
-
-div#btn span#c {
-  display: inline;
-}
-
-div#btn:hover span#c {
-  display: none;
-}
-
-div#btn span#d {
-  display: none;
-}
-
-div#btn:hover span#d {
-  display: inline;
-}
-
 /* STATEMENT
 --------------------------------------- */
 
 .statement-wrap {
   width: 70%;
   margin: auto;
-  /* top: 50%; */
-  /* transform: translate(-50%, 50%); */
   position: relative;
 }
 
 .statement {
-  /* margin: 0px; */
   z-index: -1;
 }
 
@@ -189,43 +137,15 @@ div#btn:hover span#d {
   background-color: red;
   color: blue;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.1em;
   letter-spacing: -.01em;
   line-height: 1.1em;
 }
 
+.statement p2 a:hover {
+  color: red;
+}
+
 ::selection {
   background: blue;
-}
-
-/* NAME
---------------------------------------- */
-.name-wrap {
-  width:100%;
-  display: flex;
-  /* top: 50%; */
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-#name {
-  width:100%;
-  max-width:65%;
-}
-
-div#name span#e {
-  display: inline;
-}
-
-div#name:hover span#e {
-  display: none;
-}
-
-div#name span#f {
-  display: none;
-}
-
-div#name:hover span#f {
-  display: inline;
 }

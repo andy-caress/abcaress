@@ -124,75 +124,14 @@ a {
   background: red;
 }
 
-#btn {
-  /* padding-left:10%;
-  padding-right:10%; */
-  width: 240px;
-  cursor: pointer;
-}
-
-#b:hover {}
-
-div#btn span#a {
-  display: inline;
-}
-
-div#btn:hover span#a {
-  display: none;
-}
-
-div#btn span#b {
-  display: none;
-}
-
-div#btn:hover span#b {
-  display: inline;
-}
-
-div#btn span#c {
-  display: inline;
-}
-
-div#btn:hover span#c {
-  display: none;
-}
-
-div#btn span#d {
-  display: none;
-}
-
-div#btn:hover span#d {
-  display: inline;
-}
-
 /* STATEMENT
 --------------------------------------- */
 
 .statement-wrap {
-  /* border-top: 5px solid red; */
   border-bottom: 5px solid red;
   padding-top: 8px;
   padding-bottom: 5px;
 }
-
-.statement {
-  margin: 0px;
-}
-
-/* .statement marquee {
-  background-color: red;
-  left: 50%;
-  margin: auto;
-  z-index: -1;
-  display: inline-block;
-  font-size: 32px;
-}
-
-.marquee {
-  text-transform: uppercase;
-  font-weight: 300;
-  color: blue;
-} */
 
 #statement {
   /* These are absolutely necessary */
