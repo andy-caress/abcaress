@@ -25,8 +25,29 @@ cảm ơn to everyone who's helped me throughout the years.
 
   <div class="main-wrap">
     <div class="nav-wrap">
-
       <div class="nav">
+
+        <div class="col-2">
+          <a href="about/about.html">
+            <div class='marquee-btn2'> About </div>
+          </a>
+        </div>
+
+        <div class="col-1">
+          <a href="work/work.html">
+            <div class='marquee-btn'> Work </div>
+          </a>
+        </div>
+
+        <div class="col-2">
+          <a href="resume/resume-online.pdf" target="_blank">
+            <div class='marquee-btn2'> Résumé </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- <div class="nav">
         <div id="btn">
           <a href="about/about.html">
             <span id="a"><img src="assets/about.svg"></span>
@@ -47,7 +68,7 @@ cảm ơn to everyone who's helped me throughout the years.
             <span id="b"><img src="assets/resume2.svg"></span>
           </a>
         </div>
-      </div>
+      </div> -->
 
     </div>
 
@@ -58,21 +79,8 @@ cảm ơn to everyone who's helped me throughout the years.
     <div class="statement-wrap">
 
       <div id="statement">
-        <!-- Need to have two divs with same content.
-      One div will translate completely out of parent and other div will fill the void till the transition for first div starts again. -->
-        <div id="marquee1">
-          &nbsp;Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;
-        </div>
-        <div id="marquee2">
-          &nbsp;Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;
-        </div>
+        <div class='marquee'> Andy Caress is an Asian American graphic designer studying at VCU Arts based in Virginia and North Carolina. </div>
       </div>
-
-      <!-- <div class="marquee">
-      <span class="statement">
-        <marquee scrolldelay="-1000" loop="infinite" scrollamount="20"> Andy Caress is an Asian American Graphic designer studying at VCU Arts based in Virginia and North Carolina. &nbsp;</marquee>
-      </span>
-    </div> -->
     </div>
 
     <div class="name-wrap">
@@ -86,12 +94,9 @@ cảm ơn to everyone who's helped me throughout the years.
 
   </div>
 
-  <script src="jquery.min.js"></script>
-  <script src="index.js"></script>
-  <script>
-    // It is absolute necessity that div should be smaller than individual text content.
-    $('#maindiv').width($('#div1').width());
-  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.marquee.min.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 
