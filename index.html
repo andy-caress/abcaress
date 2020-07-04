@@ -14,9 +14,40 @@ cảm ơn to everyone who's helped me throughout the years.
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="https://use.typekit.net/ohg1maz.css">
 
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'rfo1qma',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+
 </head>
 
-<body>
+<body onload="startTime()">
 
   <div class="background"></div>
 
@@ -55,14 +86,59 @@ cảm ơn to everyone who's helped me throughout the years.
     </div>
 
     <div class="name-wrap">
+
+      <div class="date-wrap">
+        <div class="date">
+
+          <div class="date-header">
+            <h1> SAIGON, VIETNAM <br> </h1>
+          </div>
+          <div class="date-copy">
+            <p1> 11:25 PM <br></p1>
+            <div class="fortune">
+              <button onclick="generateFortuneCookie()" class="generate-button">
+                <p1> GET FORTUNE!</p1>
+              </button>
+              <div id="stats"></div>
+              <span id="fortune-text" onmouseenter="generateFortuneCookie()"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <div id="name">
 
         <a href="#">
           <span id="e"><img src="assets/name-english.svg"></span>
           <span id="f"><img src="assets/name-viet2.svg"></span>
         </a>
-        
+
       </div>
+
+      <div class="date-wrap">
+        <div class="date">
+
+          <div class="date-header">
+            <h1> HIGH POINT, NC <br> </h1>
+          </div>
+          <div class="date-copy">
+            <div onload="startTime()"></div>
+            <div id="txt"> </div>
+
+            <div class="fortune">
+              <button onclick="generateFortuneCookie1()" class="generate-button">
+                <p1> GET FORTUNE!</p1>
+              </button>
+              <div id="stats"></div>
+              <span id="fortune-text2" onmouseenter="generateFortuneCookie()"></span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
   </div>

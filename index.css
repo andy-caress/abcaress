@@ -49,13 +49,6 @@ a {
 
 .nav-wrap {
   display: block;
-  /* padding: 15px; */
-  /* padding-left: 50px; */
-  /* padding-right: 50px; */
-  /* display: flex; */
-  /* flex-direction:row; */
-  /* justify-content: space-between; */
-  /* flex-grow: 1; */
 }
 
 .nav {
@@ -148,13 +141,71 @@ a {
   letter-spacing: .04em;
 }
 
+/* DATE AND TIME
+--------------------------------------- */
+.date-wrap {
+  /* width: 35%; */
+  color: red;
+  padding: 15px;
+  padding-left: 30px;
+  max-width: 20%;
+}
+
+.date {
+  border: 5px solid red;
+  background: blue;
+  padding: 15px;
+  /* position: relative; */
+  overflow: hidden;
+}
+
+.date-header h1 {
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.1em;
+  line-height: 1em;
+  text-align: center;
+  letter-spacing: -.03em;
+  margin:0px;
+  padding-bottom: 10px;
+  border-bottom: 5px dashed red;
+}
+
+.date-copy {
+  font-family: halyard-text, sans-serif;
+  font-size: 1.5em;
+  line-height: 1em;
+  letter-spacing: -.03em;
+  text-align: center;
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.fortune {
+  padding-top: 10px;
+}
+
+button {
+  font-family: halyard-text, sans-serif;
+  color: blue;
+  border-color: blue;
+  background-color: red;
+}
+
+:focus {
+  outline: none;
+}
+
+
 /* NAME
 --------------------------------------- */
 .name-wrap {
   width:100%;
   display: flex;
   /* top: 50%; */
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-grow: 1;
 }
@@ -162,6 +213,7 @@ a {
 #name {
   width:100%;
   max-width:65%;
+  padding: 25px;
 }
 
 div#name span#e {

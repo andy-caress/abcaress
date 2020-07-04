@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-family: halyard-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  /* background-image: radial-gradient(yellow, white); */
+  /* background: black; */
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  overflow: none;
+  /* background-repeat: repeat; */
+  /* background-image: url('../../assets/childhood.jpg'); */
+  /* position: absolute; */
+  /* background-size: 25%; */
+  /* filter: blur(1.5px); */
+}
+
+.main-wrap {
+  border: 5px solid red;
+  height: 98%;
+  width: 98%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  overflow: scroll;
+}
+
+/* PARAGRAPH STYLES
+--------------------------------------- */
+.page-content .caption a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.page-content .caption a:hover {
+  font-style:italic;
+}
+
+.header {
+  font-family: halyard-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 4em;
+  color: red;
+  clear: both;
+  line-height: 2em;
+  text-align: center;
+  margin: 3% auto 0% auto;
+  max-width: 800px;
+  width: 50%;
+}
+
+.caption {
+  font-family: halyard-text, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: .9rem;
+  color: red;
+  clear: both;
+  line-height: 1.1rem;
+  margin: auto auto 0% auto;
+  max-width: 800px;
+  width: 50%;
+}
+
+.art-statement {
+  margin: 1% auto 0% auto;
+  font-style: italic;
+  text-align: center;
+  width: 30%;
+  padding-bottom: 15px;
+}
+
+.text {
+  font-size: 80px;
+  line-height: 58px;
+  text-align: center;
+  padding-top: 18px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 18px;
+  /* border-bottom: 1px solid red; */
+}
+
+p1 {
+  color: red;
+}
+
+p1:hover {
+  color: blue;
+}
+
+p2 {
+  color: blue;
+}
+
+p2:hover {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVIGATION
+--------------------------------------- */
+a {
+ color: inherit;
+}
+
+.nav {
+  padding: 15px;
+  position: absolute;
+
+}
+
+.back {
+  /* border-radius: 50%; */
+  /* border: 4.4px solid red; */
+  border-bottom: 4.4px dashed red;
+  letter-spacing: -.03em;
+  font-size: 2.8em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: blue;
+  /* padding: 15px; */
+}
+
+.back:hover {
+  color: red;
+  /* border: 5px solid blue; */
+  border-bottom: 4.4px dashed blue;
+}
+
+/* PAGE CONTENT
+--------------------------------------- */
+.content {
+  clear: both;
+  /* cursor:s-resize; */
+}
+
+.page-content {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: baseline;
+}
+
+.wrap {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 3%;
+  padding-right: 2.25%;
+  padding-left: 2.25%;
+  padding-bottom: 2%;
+}
+
+/* .project img {
+  margin-top: 2.25%;
+  margin-bottom: 2.25%;
+} */
+
+.full-size img {
+  margin-top: 2.25%;
+  margin-bottom: 2.25%;
+  position: relative;
+  transform-origin: 50% 50%;
+  left: 48%;
+  width: 75%;
+  width: 75%;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+}
+
+.portrait img {
+  object-fit: contain;
+  /* height: 95vh; */
+  max-width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  width: 49.5%;
+  padding: .5%;
+}
+
+.half-size img {
+  /* margin-top: 2.25%; */
+  /* margin-bottom: 2.25%; */
+  /* position: relative; */
+  /* transform-origin: 50% 50%; */
+  object-fit: cover;
+  /* height: 100%; */
+  height: 95vh;
+  left: 50%;
+  width: 49.5%;
+  padding: .5%;
+  vertical-align: middle;
+  /* width: 75%; */
+  /* box-sizing: border-box; */
+  /* transform: translateX(-50%); */
+}
+
+.triple img {
+  /* margin-top: 2.25%;
+  margin-bottom: 2.25%;
+  position: relative;
+  transform-origin: 50% 50%; */
+  object-fit: contain;
+  /* height: 100%; */
+  /* height: 95vh; */
+  left: 50%;
+  width: 33%;
+  padding: .5%;
+  vertical-align: middle;
+  /* width: 75%; */
+  /* box-sizing: border-box; */
+  /* transform: translateX(-50%); */
+}
+
+.color a {
+  position: relative;
+  background-color: blue;
+}
+
+.color2 a {
+  position: relative;
+  background-color: red;
+}
+
+.color .title-color {
+  background-color: blue;
+  left: 50%;
+  margin: auto;
+  z-index: -1;
+  display: inline-block
+}
+
+.color2 .title-color {
+  background-color: red;
+  left: 50%;
+  margin: auto;
+  z-index: -1;
+  display: inline-block
+}

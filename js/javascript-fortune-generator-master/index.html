@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Fortune Generator</title>
+  <meta name="description" content="This page generates fortune cookie sayings.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="main.css">
+
+  <script type="text/javascript" src="fortune-cookie-generator.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <!-- mouse over cookie triggers Fortune Generator -->
+  <button onclick="generateFortuneCookie()" class="generate-button">
+    get fortune!
+  </button>
+
+  <!-- displayed Number of Generated Fortunes -->
+  <div id="stats"></div>
+
+  <span id="fortune-text" onmouseenter="generateFortuneCookie()"></span>
+
+</body>
+
+</html>
