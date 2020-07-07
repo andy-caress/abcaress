@@ -1,0 +1,358 @@
+body {
+  margin: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-family: halyard-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  /* background-image: radial-gradient(yellow, white); */
+  /* background: black; */
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  overflow: none;
+  /* background-repeat: repeat; */
+  /* background-image: url('../../assets/childhood.jpg'); */
+  /* position: absolute; */
+  /* background-size: 25%; */
+  /* filter: blur(1.5px); */
+}
+
+.main-wrap {
+  border: 5px solid red;
+  height: 98%;
+  width: 98%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  overflow: scroll;
+}
+
+/* PARAGRAPH STYLES
+--------------------------------------- */
+.page-content .caption a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.page-content .caption a:hover {
+  font-style:italic;
+}
+
+.header {
+  font-family: halyard-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 4rem;
+  color: red;
+  clear: both;
+  line-height: 3.2rem;
+  text-align: center;
+  margin: 3% auto 0% auto;
+  margin-bottom: 3%;
+  max-width: 800px;
+  width: 50%;
+}
+
+.subhead {
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.5rem;
+  line-height: 1.2rem;
+  text-align: left;
+  letter-spacing: -.09rem;
+  color: red;
+  margin: 3% 1% 0% 1%;
+  margin-bottom: 3%;
+  max-width: 800px;
+  width: 50%;
+  clear: both;
+}
+
+.caption {
+  font-family: halyard-text, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: .9rem;
+  color: red;
+  clear: both;
+  line-height: 1.1rem;
+  margin: auto auto 0% auto;
+  max-width: 800px;
+  width: 50%;
+}
+
+.art-statement {
+  margin: 1% auto 0% auto;
+  font-style: italic;
+  text-align: center;
+  width: 30%;
+  padding-bottom: 15px;
+}
+
+.text {
+  font-size: 80px;
+  line-height: 58px;
+  text-align: center;
+  padding-top: 18px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 18px;
+  /* border-bottom: 1px solid red; */
+}
+
+p1 {
+  color: red;
+}
+
+p1:hover {
+  color: blue;
+}
+
+p2 {
+  color: blue;
+}
+
+p2:hover {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVIGATION
+--------------------------------------- */
+a {
+ color: inherit;
+}
+
+.nav {
+  padding: 15px;
+  position: absolute;
+
+}
+
+/* SLIDESHOW
+--------------------------------------- */
+.slide-wrap {
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
+  /* margin-left: 2rem; */
+  width: 100%;
+  max-width: 100%;
+}
+
+.slide img::selection {
+  background: transparent;
+}
+
+.slide {
+  position: relative;
+  top: 0;
+  margin: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* width:100%; */
+}
+
+.video-slide {
+  width: 100%;
+}
+
+.slide-img {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.forward {
+  position: absolute;
+  left: 100%;
+  bottom: 150px;
+  padding-left: 10px;
+  cursor: pointer;
+  color: #ff0000;
+  /* opacity:0; */
+}
+
+.forward::before {
+  content: ">";
+  font-size: 50px;
+}
+
+.forward:hover {
+  color: #0000ff;
+}
+
+.backward {
+  position: absolute;
+  left: 100%;
+  bottom: 100px;
+  padding-left: 10px;
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.backward::before {
+  content: "<";
+  font-size: 50px;
+}
+
+.backward:hover {
+  /* opacity:1; */
+  color: #0000ff;
+}
+
+.project-description {
+  /* padding-right: 80px; */
+  width: 70%;
+  padding-bottom: 20px;
+}
+
+.project-description p1 {
+  color: #ff0000;
+}
+
+.project-description p2 {
+  color: #0000ff;
+}
+
+.project-description p3 {
+  color: #0000ff;
+  padding-left: 70px;
+  padding-right: 90px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* PAGE CONTENT
+--------------------------------------- */
+.content {
+  clear: both;
+  /* cursor:s-resize; */
+}
+
+.page-content {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: baseline;
+}
+
+.wrap {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 3%;
+  padding-right: 2.25%;
+  padding-left: 2.25%;
+  padding-bottom: 2%;
+}
+
+/* .project img {
+  margin-top: 2.25%;
+  margin-bottom: 2.25%;
+} */
+
+.full-size img {
+  margin-top: 2.25%;
+  margin-bottom: 2.25%;
+  position: relative;
+  transform-origin: 50% 50%;
+  left: 48%;
+  width: 75%;
+  width: 75%;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+}
+
+.portrait img {
+  object-fit: contain;
+  /* height: 95vh; */
+  max-width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  width: 49.5%;
+  padding: .5%;
+}
+
+.half-size img {
+  /* margin-top: 2.25%; */
+  /* margin-bottom: 2.25%; */
+  /* position: relative; */
+  /* transform-origin: 50% 50%; */
+  object-fit: cover;
+  /* height: 100%; */
+  height: 95vh;
+  left: 50%;
+  width: 49.5%;
+  padding: .5%;
+  vertical-align: middle;
+  /* width: 75%; */
+  /* box-sizing: border-box; */
+  /* transform: translateX(-50%); */
+}
+
+.triple img {
+  /* margin-top: 2.25%;
+  margin-bottom: 2.25%;
+  position: relative;
+  transform-origin: 50% 50%; */
+  object-fit: contain;
+  /* height: 100%; */
+  /* height: 95vh; */
+  left: 50%;
+  width: 33%;
+  padding: .5%;
+  vertical-align: middle;
+  /* width: 75%; */
+  /* box-sizing: border-box; */
+  /* transform: translateX(-50%); */
+}
+
+.color a {
+  position: relative;
+  background-color: blue;
+}
+
+.color2 a {
+  position: relative;
+  background-color: red;
+}
+
+.color .title-color {
+  background-color: blue;
+  left: 50%;
+  margin: auto;
+  z-index: -1;
+  display: inline-block
+}
+
+.color2 .title-color {
+  background-color: red;
+  left: 50%;
+  margin: auto;
+  z-index: -1;
+  display: inline-block
+}

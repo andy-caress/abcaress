@@ -115,6 +115,48 @@ a {
   background: red;
 }
 
+/* HOVER STATE
+--------------------------------------- */
+/* .wrap a:hover:after {
+  content: url('assets/the-ct-02.12.20-Spectrum-AC.jpg');
+  object-fit: contain;
+  transform: translateX(-50%);
+  width: 49.5%;
+  position: relative;
+  z-index: 9999;
+  padding: 25px;
+  vertical-align: middle;
+} */
+
+div.y3s2-3 span#a {
+  display: none;
+}
+
+div.y3s2-3:hover span#a {
+  display: inline;
+}
+
+div.y3s2-3 span#a {
+  object-fit: contain;
+  transform: translateX(-50%);
+  width: 12.5%;
+  position: relative;
+  z-index: 9999;
+  padding: 25px;
+  vertical-align: middle;
+}
+
+/* .wrap y3s2-3 img:hover {
+  object-fit: contain;
+  transform: translateX(-50%);
+  width: 49.5%;
+  position: relative;
+  z-index: 9999;
+  padding: 25px;
+  vertical-align: middle;
+} */
+
+
 /* PAGE CONTENT
 --------------------------------------- */
 .content {
@@ -159,6 +201,7 @@ a {
 
 .text {
   font-size: 80px;
+  text-transform: uppercase;
   line-height: 58px;
   text-align: center;
   padding-top: 18px;
