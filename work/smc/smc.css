@@ -162,9 +162,12 @@ a {
 
 /* SLIDESHOW
 --------------------------------------- */
-.slideshow {
-  width: 100%;
+.slideshow img {
+  object-fit: contain;
+  width: 33%;
+  max-width: 33%;
   height: 95vh;
+  max-height: 95vh;
 }
 
 .slide-wrap {
