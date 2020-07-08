@@ -117,45 +117,35 @@ a {
 
 /* HOVER STATE
 --------------------------------------- */
-/* .wrap a:hover:after {
-  content: url('assets/the-ct-02.12.20-Spectrum-AC.jpg');
-  object-fit: contain;
-  transform: translateX(-50%);
-  width: 49.5%;
-  position: relative;
-  z-index: 9999;
-  padding: 25px;
-  vertical-align: middle;
-} */
-
-div.y3s2-3 span#a {
-  display: none;
+.toolspan {
+  position:relative;
+  color: var(--bg3);
+  display: inline-block;
 }
 
-div.y3s2-3:hover span#a {
-  display: inline;
+.toolspan span {
+  display:none;
+  border: 5px solid red;
+  z-index: 9999;
+  background: var(--bg2);
 }
 
-div.y3s2-3 span#a {
-  object-fit: contain;
-  transform: translateX(-50%);
-  width: 12.5%;
-  position: relative;
-  z-index: 9999;
-  padding: 25px;
-  vertical-align: middle;
+.tooltip p {
+  padding:1rem;
+  color:var(--textcolor);
 }
 
-/* .wrap y3s2-3 img:hover {
-  object-fit: contain;
-  transform: translateX(-50%);
-  width: 49.5%;
-  position: relative;
-  z-index: 9999;
-  padding: 25px;
-  vertical-align: middle;
-} */
+.toolspan:hover span {
+  display:block;
+  position:fixed;
+  overflow:hidden;
+}
 
+.tooltip img {
+  max-height: 400px;
+  margin: 0;
+  padding: 0;
+}
 
 /* PAGE CONTENT
 --------------------------------------- */
