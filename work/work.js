@@ -45,8 +45,8 @@ $('.marquee-btn2').marquee({
 var tooltips = document.querySelectorAll('.toolspan span');
 
 window.onmousemove = function (e) {
-    var x = (e.clientX) + 'px',
-        y = (e.clientY) + 'px';
+    var x = (e.clientX + 5) + 'px',
+        y = (e.clientY + 10) + 'px';
     for (var i = 0; i < tooltips.length; i++) {
         tooltips[i].style.top = y;
         tooltips[i].style.left = x;

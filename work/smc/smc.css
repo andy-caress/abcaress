@@ -192,11 +192,22 @@ a {
 /* SLIDESHOW
 --------------------------------------- */
 .slideshow img {
-  object-fit: contain;
-  width: 33%;
-  max-width: 33%;
+  object-fit:cover;
+  /* width: 33%; */
+  /* max-width: 33%; */
   /* height: 95vh; */
+  padding-left: 60px;
   max-height: 95vh;
+  max-width: 100%;
+}
+
+.slideshow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slideshow-project {
+  width: 50%;
 }
 
 .slide-wrap {
@@ -238,9 +249,10 @@ a {
 }
 
 .forward {
+  line-height: 0px;
   position: absolute;
-  left: 100%;
-  bottom: 150px;
+  left: 0;
+  bottom: 80px;
   padding-left: 10px;
   cursor: pointer;
   color: #ff0000;
@@ -248,6 +260,7 @@ a {
 }
 
 .forward::before {
+  line-height: 0px;
   content: ">";
   font-size: 50px;
 }
@@ -257,15 +270,17 @@ a {
 }
 
 .backward {
+  line-height: 0px;
   position: absolute;
-  left: 100%;
-  bottom: 100px;
+  left: 0;
+  bottom: 40px;
   padding-left: 10px;
   cursor: pointer;
   color: #ff0000;
 }
 
 .backward::before {
+  line-height: 0px;
   content: "<";
   font-size: 50px;
 }

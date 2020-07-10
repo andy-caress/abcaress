@@ -5,6 +5,13 @@ body {
   font-family: halyard-display, sans-serif;
   font-weight: 500;
   font-style: normal;
+  height: 100vh;
+  width: 100vw;
+  /* padding: 10%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 * {
@@ -20,16 +27,19 @@ body {
   background-image: url('../assets/childhood.jpg');
   background-size: 25%;
   filter: blur(1.5px);
+  position: fixed;
 }
 
 .main-wrap {
   border: 5px solid red;
   height: 98%;
-  width: 70%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  width: 68%;
+  position: relative;
+
+  /* transform: translate(-50%, -50%); */
+  top: 0;
+  left: 0;
+
   overflow: scroll;
 }
 
@@ -119,7 +129,7 @@ a {
 --------------------------------------- */
 .toolspan {
   position:relative;
-  color: var(--bg3);
+  /* color: var(--bg3); */
   display: inline-block;
 }
 
@@ -127,15 +137,18 @@ a {
   display:none;
   border: 5px solid red;
   z-index: 9999;
-  background: var(--bg2);
+  /* background: var(--bg2); */
 }
 
-.tooltip p {
+.tooltip p1 {
   padding:1rem;
-  color:var(--textcolor);
+  /* color:var(--textcolor); */
 }
 
 .toolspan:hover span {
+  /* transform: translate(-100%, 0%); */
+  /* top: 50%; */
+  /* left: 50%; */
   display:block;
   position:fixed;
   overflow:hidden;
@@ -233,16 +246,16 @@ a {
 
 .color .title-color {
   background-color: blue;
-  left: 50%;
+  /* left: 50%; */
   margin: auto;
   z-index: -1;
-  display: inline-block
+  display: inline-block;
 }
 
 .color2 .title-color {
   background-color: red;
-  left: 50%;
+  /* left: 50%; */
   margin: auto;
   z-index: -1;
-  display: inline-block
+  display: inline-block;
 }
