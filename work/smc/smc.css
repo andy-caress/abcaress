@@ -112,7 +112,10 @@ body {
 }
 
 p1 {
+  font-family: halyard-text, sans-serif;
   color: red;
+  text-transform: uppercase;
+  letter-spacing: -.02rem;
 }
 
 p1:hover {
@@ -126,6 +129,32 @@ p2 {
 p2:hover {
   color: red;
 }
+
+.project-description {
+  /* padding-right: 80px; */
+  width: 70%;
+  padding-bottom: 20px;
+}
+
+.project-description p1 {
+  color: red;
+  text-transform: uppercase;
+}
+
+.project-description p2 {
+  color: red;
+}
+
+.project-description p3 {
+  color: red;
+  padding-left: 70px;
+  padding-right: 90px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
 
 a {
   text-decoration: none;
@@ -166,7 +195,7 @@ a {
   object-fit: contain;
   width: 33%;
   max-width: 33%;
-  height: 95vh;
+  /* height: 95vh; */
   max-height: 95vh;
 }
 
@@ -244,30 +273,6 @@ a {
 .backward:hover {
   /* opacity:1; */
   color: #0000ff;
-}
-
-.project-description {
-  /* padding-right: 80px; */
-  width: 70%;
-  padding-bottom: 20px;
-}
-
-.project-description p1 {
-  color: #ff0000;
-}
-
-.project-description p2 {
-  color: #0000ff;
-}
-
-.project-description p3 {
-  color: #0000ff;
-  padding-left: 70px;
-  padding-right: 90px;
-  display: inline-block;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
 }
 
 /* PAGE CONTENT
