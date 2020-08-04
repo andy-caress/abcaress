@@ -162,10 +162,6 @@ a {
 
 /* PAGE CONTENT
 --------------------------------------- */
-.content {
-  clear: both;
-  /* cursor:s-resize; */
-}
 
 .page-content {
   width: 100%;
@@ -211,23 +207,6 @@ a {
   padding-left: 3%;
   padding-right: 3%;
   padding-bottom: 18px;
-  /* border-bottom: 1px solid red; */
-}
-
-p1 {
-  color: red;
-}
-
-p1:hover {
-  color: blue;
-}
-
-p2 {
-  color: blue;
-}
-
-p2:hover {
-  color: red;
 }
 
 a {
@@ -244,18 +223,20 @@ a {
   background-color: red;
 }
 
-.color .title-color {
+.color {
   background-color: blue;
   /* left: 50%; */
   margin: auto;
   z-index: -1;
   display: inline-block;
+  color: red;
 }
 
-.color2 .title-color {
+.color2 {
   background-color: red;
   /* left: 50%; */
   margin: auto;
   z-index: -1;
   display: inline-block;
+  color: blue;
 }

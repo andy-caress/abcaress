@@ -39,15 +39,6 @@ body {
 
 /* PARAGRAPH STYLES
 --------------------------------------- */
-.page-content .caption a {
-  color: blue;
-  text-decoration: underline;
-}
-
-.page-content .caption a:hover {
-  font-style:italic;
-}
-
 .header {
   font-family: halyard-display, sans-serif;
   font-weight: 500;
@@ -72,7 +63,7 @@ body {
   text-align: left;
   letter-spacing: -.09rem;
   color: red;
-  margin: 3% 1% 0% 1%;
+  margin: 3% 1% 0% 0%;
   margin-bottom: 3%;
   max-width: 800px;
   width: 50%;
@@ -87,9 +78,17 @@ body {
   color: red;
   clear: both;
   line-height: 1.1rem;
-  margin: auto auto 0% auto;
   max-width: 800px;
   width: 50%;
+}
+
+.caption a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.caption a:hover {
+  font-style:italic;
 }
 
 .art-statement {
@@ -154,7 +153,6 @@ p2:hover {
   line-height: 18px;
   text-align: center;
 }
-
 
 a {
   text-decoration: none;
@@ -231,20 +229,10 @@ a {
   top: 0;
   margin: 0;
   left: 0;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: flex-end; */
-  /* width:100%; */
-}
-
-.video-slide {
-  /* width: 100%; */
 }
 
 .slide-img {
-  /* position: relative; */
   overflow: hidden;
-  /* max-width: 100%; */
   cursor: pointer;
 }
 
@@ -256,7 +244,6 @@ a {
   padding-left: 10px;
   cursor: pointer;
   color: #ff0000;
-  /* opacity:0; */
 }
 
 .forward::before {
@@ -294,7 +281,6 @@ a {
 --------------------------------------- */
 .content {
   clear: both;
-  /* cursor:s-resize; */
 }
 
 .page-content {
@@ -313,11 +299,6 @@ a {
   padding-left: 2.25%;
   padding-bottom: 2%;
 }
-
-/* .project img {
-  margin-top: 2.25%;
-  margin-bottom: 2.25%;
-} */
 
 .full-size img {
   margin-top: 2.25%;
@@ -347,7 +328,7 @@ a {
   /* margin-bottom: 2.25%; */
   /* position: relative; */
   /* transform-origin: 50% 50%; */
-  object-fit: cover;
+  object-fit: contain;
   /* height: 100%; */
   height: 95vh;
   left: 50%;
