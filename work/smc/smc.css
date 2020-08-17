@@ -19,6 +19,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: none;
+  background: radial-gradient(yellow, white);
   /* background-repeat: repeat; */
   /* background-image: url('../../assets/childhood.jpg'); */
   /* position: absolute; */
@@ -229,11 +230,12 @@ a {
   top: 0;
   margin: 0;
   left: 0;
+  cursor: e-resize;
 }
 
 .slide-img {
   overflow: hidden;
-  cursor: pointer;
+  cursor: e-resize;
 }
 
 .forward {
@@ -307,54 +309,45 @@ a {
   transform-origin: 50% 50%;
   left: 48%;
   width: 75%;
-  width: 75%;
   box-sizing: border-box;
   transform: translateX(-50%);
+  border: 5px solid red;
 }
 
 .portrait img {
   object-fit: contain;
-  /* height: 95vh; */
   max-width: 50%;
   left: 50%;
   transform: translateX(-50%);
   position: relative;
   width: 49.5%;
   padding: .5%;
+  border: 5px solid red;
 }
 
 .half-size img {
-  /* margin-top: 2.25%; */
-  /* margin-bottom: 2.25%; */
-  /* position: relative; */
-  /* transform-origin: 50% 50%; */
-  object-fit: contain;
-  /* height: 100%; */
+  object-fit: cover;
   height: 95vh;
   left: 50%;
   width: 49.5%;
   padding: .5%;
   vertical-align: middle;
-  /* width: 75%; */
-  /* box-sizing: border-box; */
-  /* transform: translateX(-50%); */
+  border: 5px solid red;
 }
 
-.triple {
-  /* margin-top: 2.25%;
-  margin-bottom: 2.25%;
-  position: relative;
-  transform-origin: 50% 50%; */
+.triple img {
   object-fit: contain;
-  /* height: 100%; */
-  /* height: 95vh; */
   left: 50%;
   width: 33%;
   padding: .5%;
   vertical-align: middle;
-  /* width: 75%; */
-  /* box-sizing: border-box; */
-  /* transform: translateX(-50%); */
+  border: 5px solid red;
+}
+
+.project img {
+  margin-top: 2.25%;
+  margin-bottom: 2.25%;
+  border: 5px solid red;
 }
 
 .color a {

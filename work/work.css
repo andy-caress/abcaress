@@ -57,6 +57,7 @@ body {
 --------------------------------------- */
 a {
  color: inherit;
+ cursor: help;
 }
 
 .nav-wrap {

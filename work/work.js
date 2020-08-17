@@ -26,7 +26,7 @@ $('.marquee-btn').marquee({
 	duration: 2500,
 	gap: 10,
 	delayBeforeStart: 0,
-	direction: 'right',
+	direction: 'left',
 	duplicated: true,
   pauseOnHover: true
 });
