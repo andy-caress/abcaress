@@ -7,7 +7,6 @@ body {
   font-style: normal;
   height: 100vh;
   width: 100vw;
-  /* padding: 10%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,8 +34,6 @@ body {
   height: 98%;
   width: 68%;
   position: relative;
-
-  /* transform: translate(-50%, -50%); */
   top: 0;
   left: 0;
 
@@ -57,7 +54,6 @@ body {
 --------------------------------------- */
 a {
  color: inherit;
- cursor: help;
 }
 
 .nav-wrap {
@@ -130,26 +126,21 @@ a {
 --------------------------------------- */
 .toolspan {
   position:relative;
-  /* color: var(--bg3); */
   display: inline-block;
+  cursor: help;
 }
 
 .toolspan span {
   display:none;
   border: 5px solid red;
   z-index: 9999;
-  /* background: var(--bg2); */
 }
 
 .tooltip p1 {
   padding:1rem;
-  /* color:var(--textcolor); */
 }
 
 .toolspan:hover span {
-  /* transform: translate(-100%, 0%); */
-  /* top: 50%; */
-  /* left: 50%; */
   display:block;
   position:fixed;
   overflow:hidden;
@@ -163,7 +154,6 @@ a {
 
 /* PAGE CONTENT
 --------------------------------------- */
-
 .page-content {
   width: 100%;
 }
@@ -226,7 +216,6 @@ a {
 
 .color {
   background-color: blue;
-  /* left: 50%; */
   margin: auto;
   z-index: -1;
   display: inline-block;
@@ -235,7 +224,6 @@ a {
 
 .color2 {
   background-color: red;
-  /* left: 50%; */
   margin: auto;
   z-index: -1;
   display: inline-block;
