@@ -185,7 +185,6 @@ a {
   transform: translateX(-50%);
   position: relative;
   width: 49.5%;
-  padding: .5%;
   border: 5px solid red;
 }
 
@@ -194,7 +193,6 @@ a {
   height: 95vh;
   left: 50%;
   width: 49.5%;
-  padding: .5%;
   vertical-align: middle;
   border: 5px solid red;
 }
@@ -203,7 +201,6 @@ a {
   object-fit: contain;
   left: 50%;
   width: 33%;
-  padding: .5%;
   vertical-align: middle;
   border: 5px solid red;
 }
